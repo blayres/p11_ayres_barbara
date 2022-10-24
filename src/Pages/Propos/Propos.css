@@ -1,0 +1,73 @@
+.App-main-photo img {
+    border-radius: 25px;
+    object-fit: cover;
+    opacity: 0.7;
+  }
+
+/* .App-main-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 31px;
+}
+
+.button {
+    width: 1023px;
+    height: 47px;
+    border-radius: 5px;
+    background-color: #FF6060;
+    margin-bottom: 31px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button p {
+    color: #FFF;
+    font-size: 24px;
+    margin: 0px 0px 0px 18px;
+}
+
+.button svg {
+    margin: 0px 18px;
+}
+
+.button-texte-down {
+    width: 1023px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #F6F6F6;
+    margin-top: -38px;
+    margin-bottom: 31px;
+    z-index: -1;
+}
+
+
+.button-texte-down p {
+    color: #FF6060;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px 0px 0px 85px;
+    width: 857px;
+} */
+
+@media (max-width: 600px) {
+    .App-main-photo img {
+        border-radius: 10px;
+    }
+
+    .button {
+        width: 100%;
+        height: 30px;
+    }
+
+    .button p {
+        font-size: 13px;
+    }
+
+    .button svg {
+        width: 17px;
+        height: 17px;
+    }
+}

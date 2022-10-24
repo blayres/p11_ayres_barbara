@@ -1,0 +1,63 @@
+/* HEADER */
+
+.App-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .App-header-logo {
+    width: 15%;
+    margin-left: -16px;
+  }
+  
+  .App-header-texte {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .App-header-texte p {
+    margin-left: 40px;
+    color: #FF6060;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .App-header-texte a:-webkit-any-link {
+    margin-left: 40px;
+    color: #FF6060;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .App-header-texte p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .App-header-texte a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) { 
+    .App-header {
+      justify-content: space-around;
+      margin: 0px 20px;
+    }
+
+    .App-header-logo {
+      width: 51%;
+      margin-left: 0;
+      margin-right: 60px;
+    }
+
+    .App-header-texte a:-webkit-any-link {
+      font-size: 12px;
+      text-transform: uppercase;
+      height: 17px;
+      width: 71px;
+      margin-left: 0;
+    }
+   }

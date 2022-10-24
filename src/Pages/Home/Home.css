@@ -1,0 +1,44 @@
+
+  
+  /* DIAPORAMA */
+  
+  .App-main-diaporama {
+    margin-top: 43px;
+    max-width: 1920px;
+    border-radius: 25px;
+    background-color: #F6F6F6;
+  }
+
+  @media (max-width: 600px) {
+    .App-main-photo {
+      width: 335px;
+      height: 111px;
+      border-radius: 10px
+    }
+
+    .App-main-photo img {
+      width: 335px;
+      height: 111px;
+      border-radius: 10px
+    }
+
+    .App-main-title {
+      font-size: 24px;
+      width: 200px;
+      margin-left: -100px;
+    }
+
+    .App-main-diaporama-photos {
+      grid-template-columns: repeat(1, 0fr);
+    }
+
+    .App-main-diaporama {
+      margin-top: 0;
+      background-color: transparent;
+    }
+
+    .App-main-diaporama-photo {
+      margin-top: 22px;
+    }
+    
+  }

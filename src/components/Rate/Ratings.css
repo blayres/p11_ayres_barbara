@@ -1,0 +1,11 @@
+.stars {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+  }
+  
+  /* @media (max-width: 600px) {
+    .stars img {
+      width: 1.2rem;
+    }
+  } */

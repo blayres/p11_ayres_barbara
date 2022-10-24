@@ -1,0 +1,157 @@
+.house-carrousel {
+    height: 415px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    border-radius: 25px;
+    background-color: gray;
+}
+
+.infos {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rigth {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF6060;
+}
+
+.location {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF6060;
+}
+
+.tags {
+    display: flex;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.tag {
+    height: 25px;
+    width: 115px;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+    background: #FF6060;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    list-style: none;
+}
+
+.host {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #FF6060;
+}
+
+.host-name {
+    margin-right: 10px;
+    height: 52px;
+    width: 93px;
+}
+
+.host-picture img {
+    height: 64px;
+    width: 64px;
+    left: 1273px;
+    top: 567px;
+    border-radius: 35px;
+    object-fit: cover;
+}
+
+.house-buttons {
+    margin-top: 24px;
+}
+
+.house-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+
+@media (max-width: 600px) {
+    .house-carrousel {
+        height: 255px;
+        width: 335px;
+    }
+
+    .house-details {
+        display: block;
+    }
+
+    .infos {
+        display: block;
+    }
+
+    .rigth {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .title {
+        height: 46px;
+        width: 335px;
+        left: 20px;
+        top: 364px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .location {
+        height: 22px;
+        width: 323px;
+        left: 20px;
+        top: 415px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .tags {
+        margin-top: 12px;
+    }
+
+    .tag {
+        height: 23px;
+        width: 84px;
+        left: 0px;
+        top: 0px;
+        border-radius: 5px;
+    }
+
+}
+    
+

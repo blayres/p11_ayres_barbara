@@ -1,0 +1,67 @@
+.App-main-diaporama-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-gap: 4px 60px;
+    justify-content: center;
+    align-content: center;
+    padding: 0px 0px 56px 0px;
+    margin-bottom: 40px;
+  }
+  
+  .App-main-diaporama-photo {
+    margin-top: 56px;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  
+
+  .gradient {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: black;
+  }
+
+
+  .cover {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    object-fit: cover;
+    mask-image: linear-gradient(180deg,  rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.3));
+  }
+  
+  .App-main-diaporama-title {
+    margin-left: -315px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 1;
+  }
+
+  .App-main-diaporama-title p {
+    width: 300px;
+  }
+
+  @media (max-width: 600px) {
+    .App-main-diaporama-photos {
+      margin-bottom: 0px;
+    }
+
+    .App-main-diaporama-photo {
+        width: 335px;
+        height: 255px;
+    }
+
+    .cover {
+      width: 335px;
+      height: 255px;
+    }
+  }
