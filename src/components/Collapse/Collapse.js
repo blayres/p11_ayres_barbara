@@ -7,13 +7,14 @@ function Collapse(props) {
     const [open, setOpen] = useState(false);
 
     const toggle = () => {
-    setOpen(!open);
+    setOpen(!open)
+    document.querySelector("#IconArrow").style.transform = "rotate(90deg)";
   };
 
     return (
         <div className="App-buttons">
             <button className="closed-button" onClick={toggle}><p>{props.title} </p>
-            <div className='icon' >
+            <div className='icon'>
             <IconArrow />
             </div>
             </button>
