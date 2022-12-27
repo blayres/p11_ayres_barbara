@@ -1,120 +1,98 @@
-.App-main-buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 31px;
-}
-
-.App-buttons {
+.dropdown {
+    width: 100%;
+    border-radius: 5px;
+    color: #ff6060;
+    margin-bottom: 30px;
     width: calc(100% - 150px);
-}
-
-.closed-button {
-    width: 100%;
-    height: 47px;
-    border: none;
-    border-radius: 5px;
-    background-color: #FF6060;
-    margin-bottom: 31px;
+  }
+  
+  .dropdown[open] {
+    background: #f6f6f6;
+  }
+  
+  .dropdown > div {
+    padding: 15px 10px 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+  }
+  
+  .dropdown summary {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-.closed-button:hover {
-    cursor: pointer;
-}
-
-.closed-button p {
-    color: #FFF;
-    font-size: 24px;
-    margin: 0px 0px 0px 18px;
-}
-
-.closed-button svg {
-    margin: 0px 18px;
-}
-
-.closed-button svg {
-    cursor: pointer;
-}
-
-.icon::after {
-    transform: rotateX(180deg);
-}
-
-
-.button-texte-down {
-    width: 100%;
-    height: 200px;
+    justify-content: space-between;
+    width: inherit;
+    height: 30px;
     border-radius: 5px;
-    background-color: #F6F6F6;
-    margin-top: -38px;
-    margin-bottom: 31px;
-    position: relative;
-    z-index: -1;
-}
-
-
-.button-texte-down p {
-    color: #FF6060;
-    font-size: 24px;
-    font-weight: 400;
-    padding: 25px 0px 0px 25px;
-}
-
-.button-texte-down ul {
-    padding: 25px 0px 0px 25px;
-}
-
-.button-texte-down li {
-    color: #FF6060;
-    font-size: 24px;
-    font-weight: 400;
+    background: #ff6060;
+    padding: 0 7px 0 10px;
     list-style: none;
-    
-}
-
-@media (max-width: 600px) {
-    .App-main-photo img {
-        border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .dropdown summary svg {
+    height: 9px;
+    width: auto;
+  }
+  
+  .dropdown[open] summary svg {
+    transform: rotate(180deg);
+  }
+  
+  .dropdown.large {
+    border-radius: 5px;
+  }
+  
+  .dropdown.large summary {
+    border-radius: 5px;
+  }
+  
+  @media (min-width: 1250px) {
+    .dropdown {
+      border-radius: 10px;
     }
-
-    .App-main-buttons {
-        margin-bottom: 55px;
+  
+    .dropdown > div {
+      padding: 20px;
+      font-size: 18px;
     }
-
-    .App-buttons {
-        width: 100%;
+  
+    .dropdown summary {
+      height: 52px;
+      border-radius: 10px;
+      padding: 0 12px 0 20px;
+      font-size: 18px;
     }
-
-    .closed-button {
-        height: 30px;
+  
+    .dropdown summary svg {
+      height: 16px;
     }
-
-    .closed-button p {
-        font-size: 13px;
+  
+    .dropdown.large {
+      width: 1024px;
+      font-size: 24px;
     }
-
-    .closed-button svg {
-        width: 17px;
-        height: 17px;
+  
+    .dropdown.large > div {
+      font-size: 24px;
     }
-
-    .button-texte-down {
-        height: 170px;
+  
+    .dropdown.large summary {
+      height: 47px;
+      font-size: 24px;
     }
-
-    .button-texte-down p {
-        font-size: 12px;
-        padding: 20px 20px 20px 20px;
-        width: 85%;
-        line-height: 17px;
+  }
+  
+  @media (min-width: 1400px) {
+    .dropdown {
+      border-radius: 10px;
+      width: calc(100% - 150px);
     }
-
-    .button-texte-down li {
-        font-size: 12px;
-        width: 85%;
-    }
-}
+  }

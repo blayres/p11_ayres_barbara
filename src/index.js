@@ -16,7 +16,6 @@ root.render(
       <Route path="/" element={<App />} />
       <Route path="propos" element={<Propos />} />
       <Route path="houses/:id" element={<Houses />} />
-      <Route path="houses/*" element={<Error />} />
       <Route path="/404" element={<Error />} />
       <Route path="*" element={<Navigate to="/404" />} />
     </Routes>

@@ -28,16 +28,11 @@
     color: #FF6060;
     font-size: 24px;
     font-weight: 500;
-    text-decoration: none;
+    text-decoration: inherit;
   }
   
-  .App-header-texte p:hover {
-    cursor: pointer;
-    text-decoration: underline;
-  }
   
-  .App-header-texte a:hover {
-    cursor: pointer;
+  .App-header-texte a:-webkit-any-link.active {
     text-decoration: underline;
   }
 

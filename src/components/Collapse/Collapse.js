@@ -1,38 +1,28 @@
-import './Collapse.css'
-import IconArrow from '../Icons/Arrow';
-import IconArrowUp from '../Icons/ArrowUp';
-import { useState } from 'react';
+import React from "react"
+import "./Collapse.css"
+import Arrow from '../Icons/Arrow'
 
-function Collapse(props) {
-    const [open, setOpen] = useState(false);
-
-    const toggle = () => {
-    setOpen(!open)
-    document.querySelector("#IconArrow").style.transform = "rotate(90deg)";
-  };
-
-    return (
-        <div className="App-buttons">
-            <button className="closed-button" onClick={toggle}><p>{props.title} </p>
-            <div className='icon'>
-            <IconArrow />
-            </div>
-            </button>
-                {open && (
-                  <div className="button-texte-down">
-                        {!props.isArray ? (
-                        <p>{props.text} </p>
-                    ) : (
-                        <ul>
-                        {props.text.map((word, index) => (         
-                            <li>{word}</li>
-                        ))}
-                        </ul>
-                    )}
-                  </div>
-                )}
-        </div>
-    )
+export default function Dropdown(props) {
+  return (
+    <details className="dropdown">
+      <summary>{props.title}<Arrow /></summary>
+      <div>
+        {props.text}
+      </div>
+    </details>
+  );
 }
 
-export default Collapse;
+export function DropdownLarge(props) {
+  return (
+    <details className="dropdown large">
+      <summary>{props.title}<Arrow /></summary>
+      <div>
+        {props.text}
+      </div>
+    </details>
+  );
+}
+
+
+
